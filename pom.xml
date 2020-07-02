@@ -13,6 +13,7 @@
         <module>super-mall-member</module>
         <module>super-mall-order</module>
         <module>super-mall-product</module>
-        <module>super-mall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
     </modules>
 </project>
