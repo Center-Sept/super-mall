@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.centersept.supermall</groupId>
+    <artifactId>super-mall</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>super-mall</name>
+    <description>baba-project</description>
+    <packaging>pom</packaging>
+    <modules>
+        <module>super-mall-coupon</module>
+        <module>super-mall-member</module>
+        <module>super-mall-order</module>
+        <module>super-mall-product</module>
+        <module>super-mall-ware</module>
+    </modules>
+</project>
