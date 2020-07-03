@@ -15,5 +15,6 @@
         <module>super-mall-product</module>
         <module>renren-fast</module>
         <module>renren-generator</module>
+        <module>super-mall-common</module>
     </modules>
 </project>

@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.72.130:3306/supermall_sms
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: supermall-coupon
+mybatis-plus:
+  #mapper 的路径 ，classpath* 全路径扫描，即java的类路径下；classpath 即 resource 路径下
+  mapper-locations: classpath:/mapper/**/*.xml
+  #配置主键使用规则
+  global-config:
+    db-config:
+      #主键自增
+      id-type: auto
+server:
+  port: 8000
