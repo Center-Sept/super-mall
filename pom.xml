@@ -13,8 +13,7 @@
         <module>super-mall-member</module>
         <module>super-mall-order</module>
         <module>super-mall-product</module>
-        <module>renren-fast</module>
-        <module>renren-generator</module>
         <module>super-mall-common</module>
+        <module>super-mall-tts</module>
     </modules>
 </project>
