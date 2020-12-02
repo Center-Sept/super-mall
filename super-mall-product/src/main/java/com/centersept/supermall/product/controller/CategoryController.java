@@ -31,7 +31,6 @@ public class CategoryController {
     @RequestMapping("/list")
     public R list(@RequestParam Map<String, Object> params) {
         PageUtils page = categoryService.queryPage(params);
-
         return R.ok().put("page", page);
     }
 
@@ -43,6 +42,18 @@ public class CategoryController {
     public R menu() {
         List<CategoryEntity> menu = categoryService.menu();
         return R.ok().put("data", menu);
+    }
+
+    /**
+     * 查出所有分类以及子分类，以树形结构组装起来
+     */
+    @RequestMapping("/list/tree")
+    public R list() {
+
+        List<CategoryEntity> entities = categoryService.listWithTree();
+
+
+        return R.ok().put("data", entities);
     }
 
     /**

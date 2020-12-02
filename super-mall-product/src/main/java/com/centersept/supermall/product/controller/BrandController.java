@@ -3,6 +3,7 @@ package com.centersept.supermall.product.controller;
 import com.centersept.supermall.common.utils.PageUtils;
 import com.centersept.supermall.common.utils.R;
 import com.centersept.supermall.common.valid.AddGroup;
+import com.centersept.supermall.common.valid.UpdateGroup;
 import com.centersept.supermall.common.valid.UpdateStatusGroup;
 import com.centersept.supermall.product.entity.BrandEntity;
 import com.centersept.supermall.product.service.BrandService;
@@ -62,9 +63,9 @@ public class BrandController {
      * 修改
      */
     @RequestMapping("/update")
-    public R update(@RequestBody BrandEntity brand) {
-        brandService.updateById(brand);
-
+    //@RequiresPermissions("product:brand:update")
+    public R update(@Validated(UpdateGroup.class) @RequestBody BrandEntity brand){
+        brandService.updateDetail(brand);
         return R.ok();
     }
 
